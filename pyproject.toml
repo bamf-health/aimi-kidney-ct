@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "aimi-kidney-ct"
+version = "0.1.0"
+description = ""
+authors = ["Jeff VanOss <jeff.vanoss@bamfhealth.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ipykernel = "^6.25.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+mypy = "^1.5.1"
+pre-commit = "^3.3.3"
+isort = "^5.12.0"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+target-version = ['py310']
+
+[tool.mypy]
+implicit_optional = true
+check_untyped_defs = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
