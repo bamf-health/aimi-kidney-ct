@@ -24,7 +24,7 @@ There is an optional `--nifti` flag that will take nifti files as input and outp
 
 #### Run inference on IDC Collections
 
-This model was run on CT scans from the TCGA-KIRC collection. The AI segmentations and corrections by a radioloist for 10% of the dataset are available in the liver-ct.zip file on the zenodo record #Add link
+This model was run on CT scans from the TCGA-KIRC collection. The AI segmentations and corrections by a radioloist for 10% of the dataset are available in the liver-ct.zip file on the [zenodo record](https://zenodo.org/record/8352041)
 
 You can reproduce the results with the [run_on_idc_data](run_on_idc_data.ipynb) notebook on google colab.
 
