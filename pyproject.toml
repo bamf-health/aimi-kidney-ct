@@ -7,8 +7,16 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-ipykernel = "^6.25.1"
+python = ">=3.10,<3.13"
+ipykernel = "^6.25.2"
+simpleitk = "^2.3.0"
+pydicom = "^2.4.3"
+requests = "^2.31.0"
+seaborn = "^0.12.2"
+pydicom-seg = "^0.4.1"
+scikit-learn = "^1.3.1"
+segmentationmetrics = "^1.0.1"
+tqdm = "^4.66.1"
 
 
 [tool.poetry.group.dev.dependencies]
