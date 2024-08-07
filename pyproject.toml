@@ -21,16 +21,15 @@ tqdm = "^4.66.1"
 
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.7.0"
+ruff = "^0.3.5"
 mypy = "^1.5.1"
 pre-commit = "^3.3.3"
-isort = "^5.12.0"
 
-[tool.isort]
-profile = "black"
-
-[tool.black]
-target-version = ['py310']
+[tool.ruff]
+target-version = "py39"
+lint.select = ["I", "UP", "SIM"]
+lint.ignore = ["UP007"]
+lint.fixable = ["ALL"]
 
 [tool.mypy]
 implicit_optional = true
