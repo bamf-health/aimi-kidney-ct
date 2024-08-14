@@ -288,6 +288,53 @@ traitlets = ">=4"
 test = ["pytest"]
 
 [[package]]
+name = "connected-components-3d"
+version = "3.18.0"
+description = "Connected components on discrete and continuous multilabel 3D and 2D images. Handles 26, 18, and 6 connected variants; periodic boundaries (4, 8, & 6)."
+optional = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "connected_components_3d-3.18.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:61ee441135b6d3fb5574e7b3519a085f9fa1bb0adda5d3b48fd56ca4da742225"},
+    {file = "connected_components_3d-3.18.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:2f43628ad498c739f4ec0ae8e06cd340a5e9528cf18faa880b93eb4e672f7d4e"},
+    {file = "connected_components_3d-3.18.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:5d3b7a24b3c86cc411423e9c2fe36d989a3f1ad157a458de4f4bd57031e51247"},
+    {file = "connected_components_3d-3.18.0-cp310-cp310-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:6ed3ac72adc06a3996c4b5caf00142f9c9a0581f5f54646439d7b6847dfd0e02"},
+    {file = "connected_components_3d-3.18.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:23a6b7180d0739ab8dd46111551bad71c11658f92d91f91d3056a59daefa9843"},
+    {file = "connected_components_3d-3.18.0-cp310-cp310-win32.whl", hash = "sha256:c36f28947482e499782cee5b55a32200e14b765062d11eb42ec3af22264b3289"},
+    {file = "connected_components_3d-3.18.0-cp310-cp310-win_amd64.whl", hash = "sha256:126771d28060f9f17fd8a56f010815a7e851cf044f13dce4d654752692280521"},
+    {file = "connected_components_3d-3.18.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:ed80969d046352aa34f265a7c45c2b82937df8367206f2a496cc87cafea14134"},
+    {file = "connected_components_3d-3.18.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:704b5a2c4daa128af8e66c6b4289a82f2967bb69de1a0168c5bb308a7014e9cc"},
+    {file = "connected_components_3d-3.18.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:18c7c2a8a3fa46d1041ff3b44da3e77876b40d3cc85817188aaad05b0743175f"},
+    {file = "connected_components_3d-3.18.0-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:ee76ff13f14fbc1299557e730a050f7e7d14fbc59f09a927147e5923280491bb"},
+    {file = "connected_components_3d-3.18.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:bf559497d6d9e911ce9111d46021476a0c8999da2a5e1ebbb028c89a23a13ccc"},
+    {file = "connected_components_3d-3.18.0-cp311-cp311-win32.whl", hash = "sha256:a2bfeeb9bce4ad94954b3bb49725ccae7ad9a3f5a9a0b2e5aa3097162a772b1e"},
+    {file = "connected_components_3d-3.18.0-cp311-cp311-win_amd64.whl", hash = "sha256:b1caf13e0caf6f3ec83f65efb7795a1a36dd6bc693310983b81c33f986e11284"},
+    {file = "connected_components_3d-3.18.0-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:d9ca61513c43ab619aacb74eadb2368c6e023c1d4a9d0c8d9b9f2e5e3e34f222"},
+    {file = "connected_components_3d-3.18.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:e126f921b7e9b9330ed629742a837a3fcfed5843a64f912a07fec2c6cea34f31"},
+    {file = "connected_components_3d-3.18.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:937c0f2d1a29c337640d806d971ac7c762e7f9e593ae582637440d57bc1d8b7f"},
+    {file = "connected_components_3d-3.18.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a5b2873452f67c6b53fa0da43bdc038005ccaefac7fca87cf1c0444b0845c900"},
+    {file = "connected_components_3d-3.18.0-cp312-cp312-win32.whl", hash = "sha256:4fec54798c4a288e02e66a9e5216f6bbdb98d54ae8ae807b9e4d0cc57681368a"},
+    {file = "connected_components_3d-3.18.0-cp312-cp312-win_amd64.whl", hash = "sha256:4650aca44dcae96e6c3d231d845ca1a93a0c2e44396707147aa4c04b4c708d84"},
+    {file = "connected_components_3d-3.18.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:626f38998d4993bcdc5cc58d2f40a1a250a97bbb1109b61878ef2b215d596ff4"},
+    {file = "connected_components_3d-3.18.0-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:285895e842261035eed9a2a47111c01ea1ae765dcfe7666d58875543ceb161eb"},
+    {file = "connected_components_3d-3.18.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c8f70270b083696c23b839847259b76506b900b6ababa0eff786210c2cd25c2e"},
+    {file = "connected_components_3d-3.18.0-cp38-cp38-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:d00704f48397159a7e8c4fdaf31edb2a55821724edc0dddb6fd318baad058322"},
+    {file = "connected_components_3d-3.18.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1d7018fbcf57f4f7987d73de607d647cfacac01804f6bff2e924be37e0e67b06"},
+    {file = "connected_components_3d-3.18.0-cp38-cp38-win32.whl", hash = "sha256:e0c4fefa302b7021a5bd66b758f13cd2484e53a55c0c49e3381d68658261bf7e"},
+    {file = "connected_components_3d-3.18.0-cp38-cp38-win_amd64.whl", hash = "sha256:c3b57c5034d1a73aba0ad31971a3a66f8d6d27138547a68af45b380c667a01d8"},
+    {file = "connected_components_3d-3.18.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:156d1a0f0f7f3dc4a2532d4aa36a8411887938655182253b6eace6241295a272"},
+    {file = "connected_components_3d-3.18.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:2f00046c2cb105ef5304959b33705746675f0f05d05983b9cb7c98364dbfdc47"},
+    {file = "connected_components_3d-3.18.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c317262a6bf0a5f88a3f6380da89ebc539ef73feeae0e8fc433dadda2d3989be"},
+    {file = "connected_components_3d-3.18.0-cp39-cp39-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:351aa6da2f326feb50a58277f7f4ffbc9aaf8bfd95bbd62223ac1129c6ffe73d"},
+    {file = "connected_components_3d-3.18.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b1f9e635c2cf30aa8e3328521c40d8029611972ba21f11ecfe206f564584fd3c"},
+    {file = "connected_components_3d-3.18.0-cp39-cp39-win32.whl", hash = "sha256:f24f9a960937fb0efbf15d27ea3f967e49003918977b99f21185136ce72afe17"},
+    {file = "connected_components_3d-3.18.0-cp39-cp39-win_amd64.whl", hash = "sha256:8ea14f9bb82def2d97661c0cf633548029e88d53163a237478b7fe47cc5b051f"},
+    {file = "connected_components_3d-3.18.0.tar.gz", hash = "sha256:e4f187eeed4202f5fd97dca7fa63bea0dd71826b4d2240bc14e4b53920e7988c"},
+]
+
+[package.dependencies]
+numpy = "*"
+
+[[package]]
 name = "contourpy"
 version = "1.2.1"
 description = "Python library for calculating contours of 2D quadrilateral grids"
@@ -2288,4 +2335,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "6794d413eeb940b749563b34fc3520234965ab1d6df2c4acfa4813160c104144"
+content-hash = "1842bc83a724f4d13d3b8291ceea102e7b3891b94c9317ade3346cebd8abeb7d"
