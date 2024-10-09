@@ -4,30 +4,18 @@ The kidney tumor segmentation model is trained on contrast CT (corticomedullary 
 
 The [model_performance](model_performance.ipynb) notebook contains the code to evaluate the model performance on the [TCGA-KIRC](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=5800386) collection against a validation evaluated by a radiologist and a non-expert.
 
+As an extended project, this model was used to gennerate annotations an addition IDC Collections. The performance on these collections can be found in the [model_performance_aimi2](model_performance_aimi2.ipynb) notebook.
+
+- [TCGA-KICH](https://www.cancerimagingarchive.net/collection/tcga-kich/)
+- [TCGA-KIRP](https://www.cancerimagingarchive.net/collection/tcga-kirp/)
+- [CPTAC-CCRCC](https://www.cancerimagingarchive.net/collection/CPTAC-CCRCC/)
+
 ## Running the model
 
-#TODO
+The model was released as a docker container on [MHub.ai](https://mhub.ai/models/bamf_nnunet_ct_kidney)
 
-### Build container from pretrained weights
+you can run the model with the following command, where `$in` is the path to the input directory of dicom files for the CT scan, and `$out` is the path to the output directory where the DICOM-SEG will be placed.
 
-#TODO
-
-### Running inference
-
-By default the container takes an input directory that contains DICOM files of CT scans, and an output directory where DICOM-SEG files will be placed. To run on multiple scans, place DICOM files for each scan in a separate folder within the input directory. The output directory will have a folder for each input scan, with the DICOM-SEG file inside.
-
-example:
-
-#TODO
-
-There is an optional `--nifti` flag that will take nifti files as input and output.
-
-#### Run inference on IDC Collections
-
-This model was run on CT scans from the [TCGA-KIRC](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=5800386) collection. The AI segmentations and corrections by a radioloist for 10% of the dataset are available in the kidney-ct.zip file on the [zenodo record](https://zenodo.org/record/8352041)
-
-You can reproduce the results with the [run_on_idc_data](run_on_idc_data.ipynb) notebook on google colab.
-
-### Training your own weights
-
-Refer to the [training instructions](training.md) for more details. #TODO
+```bash
+docker run --rm -t --gpus all -v $in:/app/data/input_data -v $out:/app/data/output_data mhubai/bamf_nnunet_ct_kidney
+```
