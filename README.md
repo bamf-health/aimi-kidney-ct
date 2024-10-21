@@ -19,3 +19,30 @@ you can run the model with the following command, where `$in` is the path to the
 ```bash
 docker run --rm -t --gpus all -v $in:/app/data/input_data -v $out:/app/data/output_data mhubai/bamf_nnunet_ct_kidney
 ```
+
+### Example
+
+Download an example CT scan from the [TCGA-KIRC](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=5800386) using [idc-index](https://github.com/ImagingDataCommons/idc-index/tree/main)
+
+```python
+from idc_index import index
+from pathlib import Path
+
+Path("example_data").mkdir(exist_ok=True)
+
+client = index.IDCClient()
+client.download_from_selection(
+    seriesInstanceUID=["1.3.6.1.4.1.14519.5.2.1.2932.1975.291646103899971840049683623517"],
+    downloadDir="example_data",
+)
+```
+
+Then run the docker container with the following command
+
+```bash
+mkdir example_output
+export in=$(pwd)/example_data
+export out=$(pwd)/example_output
+
+docker run --rm -t --gpus all -v $in:/app/data/input_data -v $out:/app/data/output_data mhubai/bamf_nnunet_ct_kidney
+```
